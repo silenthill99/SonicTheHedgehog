@@ -1,3 +1,5 @@
 {
-  "entity.sonic_mod.sonic_the_hedgehog": "Sonic the hedgehog"
+  "entity.sonic_mod.sonic_the_hedgehog": "Sonic the hedgehog",
+  "item.sonic_mod.sonic_the_hedgehog_spawn_egg": "Sonic the hedgehog spawn egg",
+  "itemGroup.sonic": "Sonic"
 }
