@@ -18,7 +18,8 @@ public class Sonic extends CreatureEntity
     {
         return CreatureEntity.createLivingAttributes()
                 .add(Attributes.MAX_HEALTH, 20.0f)
-                .add(Attributes.MOVEMENT_SPEED, 1.0f);
+                .add(Attributes.MOVEMENT_SPEED, 1.0f)
+                .add(Attributes.FOLLOW_RANGE, 2.0f);
     }
 
     @Override

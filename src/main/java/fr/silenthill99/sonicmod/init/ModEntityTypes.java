@@ -14,6 +14,6 @@ public class ModEntityTypes
 
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPE = DeferredRegister.create(ForgeRegistries.ENTITIES, Main.MODID);
 
-    public static final RegistryObject<EntityType<Sonic>> SONIC = ENTITY_TYPE.register("sonic_the_hedgehog", () -> EntityType.Builder.of(Sonic::new, EntityClassification.AMBIENT).sized(1.0f, 2.0f).build(new ResourceLocation(Main.MODID," sonic_the_hedgehog").toString()));
+    public static final RegistryObject<EntityType<Sonic>> SONIC = ENTITY_TYPE.register("sonic_the_hedgehog", () -> EntityType.Builder.of(Sonic::new, EntityClassification.AMBIENT).sized(1.0f, 2.0f).build(new ResourceLocation(Main.MODID,"sonic_the_hedgehog").toString()));
 
 }
