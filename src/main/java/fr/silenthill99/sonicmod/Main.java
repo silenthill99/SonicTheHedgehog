@@ -2,6 +2,8 @@ package fr.silenthill99.sonicmod;
 
 import fr.silenthill99.sonicmod.init.ModEntityTypes;
 import fr.silenthill99.sonicmod.init.ModItems;
+import fr.silenthill99.sonicmod.init.entities.amy.Amy;
+import fr.silenthill99.sonicmod.init.entities.amy.AmyRenderer;
 import fr.silenthill99.sonicmod.init.entities.sonic.Sonic;
 import fr.silenthill99.sonicmod.init.entities.sonic.SonicRenderer;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
@@ -30,6 +32,7 @@ public class Main {
     private void setup(FMLCommonSetupEvent event)
     {
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.SONIC.get(), SonicRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.AMY.get(), AmyRenderer::new);
     }
 
     private void clientSetup(FMLClientSetupEvent event)
@@ -40,5 +43,6 @@ public class Main {
     private void onEntityAttributeCreation(EntityAttributeCreationEvent event)
     {
         event.put(ModEntityTypes.SONIC.get(), Sonic.createAttributes().build());
+        event.put(ModEntityTypes.AMY.get(), Amy.createAttributes().build());
     }
 }
