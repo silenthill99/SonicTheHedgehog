@@ -2,6 +2,7 @@
   "entity.sonic_mod.amy_rose": "Amy Rose",
   "entity.sonic_mod.sonic_the_hedgehog": "Sonic le hérisson",
   "item.sonic_mod.amy_rose_spawn_egg": "Oeuf d'apparition d'Amy Rose",
+  "item.sonic_mod.piko_piko_hammer": "Marteau piko piko",
   "item.sonic_mod.sonic_the_hedgehog_spawn_egg": "Oeuf d'apparition de sonic le hérisson",
   "itemGroup.sonic": "Sonic"
 }
