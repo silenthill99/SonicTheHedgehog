@@ -4,6 +4,8 @@ import fr.silenthill99.sonicmod.init.ModEntityTypes;
 import fr.silenthill99.sonicmod.init.ModItems;
 import fr.silenthill99.sonicmod.init.entities.amy.Amy;
 import fr.silenthill99.sonicmod.init.entities.amy.AmyRenderer;
+import fr.silenthill99.sonicmod.init.entities.knuckles.Knuckles;
+import fr.silenthill99.sonicmod.init.entities.knuckles.KnucklesRenderer;
 import fr.silenthill99.sonicmod.init.entities.sonic.Sonic;
 import fr.silenthill99.sonicmod.init.entities.sonic.SonicRenderer;
 import fr.silenthill99.sonicmod.utils.ModSoundEvents;
@@ -35,6 +37,7 @@ public class Main {
     {
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.SONIC.get(), SonicRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.AMY.get(), AmyRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.KNUCKLES.get(), KnucklesRenderer::new);
     }
 
     private void clientSetup(FMLClientSetupEvent event)
@@ -46,5 +49,6 @@ public class Main {
     {
         event.put(ModEntityTypes.SONIC.get(), Sonic.createAttributes().build());
         event.put(ModEntityTypes.AMY.get(), Amy.createAttributes().build());
+        event.put(ModEntityTypes.KNUCKLES.get(), Knuckles.createAttributes().build());
     }
 }
