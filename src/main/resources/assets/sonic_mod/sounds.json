@@ -1,0 +1,12 @@
+{
+  "sonic-theme":
+  {
+    "sounds":
+    [
+      {
+        "name": "sonic_mod:sonic-the-hedgehog-ost-green-hill-zone",
+        "stream": true
+      }
+    ]
+  }
+}

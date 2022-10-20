@@ -4,15 +4,12 @@ import fr.silenthill99.sonicmod.Main;
 import fr.silenthill99.sonicmod.utils.CustomArmorMaterial;
 import fr.silenthill99.sonicmod.utils.CustomItemTiers;
 import fr.silenthill99.sonicmod.utils.ModItemGroups;
+import fr.silenthill99.sonicmod.utils.ModSoundEvents;
 import net.minecraft.inventory.EquipmentSlotType;
-import net.minecraft.item.ArmorItem;
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.SwordItem;
-import net.minecraft.util.WeightedRandom;
+import net.minecraft.item.*;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.fml.RegistryObject;
 import net.minecraftforge.registries.DeferredRegister;
-import net.minecraft.item.Item;
 import net.minecraftforge.registries.ForgeRegistries;
 
 public class ModItems
@@ -26,6 +23,9 @@ public class ModItems
     public static final RegistryObject<Item> PIKO_PIKO_HAMMER = ITEMS.register("piko_piko_hammer", () -> new SwordItem(CustomItemTiers.PIKO_PIKO_HAMMER, 4, -1.0f, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_MATERIALS)));
     public static final RegistryObject<Item> TEST_HELMET = ITEMS.register("test_helmet", () -> new ArmorItem(CustomArmorMaterial.TEST, EquipmentSlotType.HEAD, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_MATERIALS)));
     public static final RegistryObject<Item> TEST_CHESTPLATE = ITEMS.register("test_chestplate", () -> new ArmorItem(CustomArmorMaterial.TEST, EquipmentSlotType.CHEST, new Item.Properties().stacksTo(1).tab(ItemGroup.TAB_MATERIALS)));
+    public static final RegistryObject<Item> TEST_LEGGINGS = ITEMS.register("test_leggings", () -> new ArmorItem(CustomArmorMaterial.TEST,EquipmentSlotType.LEGS, new Item.Properties().tab(ItemGroup.TAB_MATERIALS).stacksTo(1)));
+    public static final RegistryObject<Item> TEST_BOOTS = ITEMS.register("test_boots", () -> new ArmorItem(CustomArmorMaterial.TEST, EquipmentSlotType.FEET, new Item.Properties().tab(ItemGroup.TAB_MATERIALS).stacksTo(1)));
 
+    public static final RegistryObject<Item> SONIC_THEME = ITEMS.register("sonic_theme", () -> new MusicDiscItem(1, ModSoundEvents.SONIC_THEME, new Item.Properties().tab(ItemGroup.TAB_MATERIALS).stacksTo(1)));
 
 }

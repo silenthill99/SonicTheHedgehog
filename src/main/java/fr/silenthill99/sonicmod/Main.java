@@ -6,6 +6,7 @@ import fr.silenthill99.sonicmod.init.entities.amy.Amy;
 import fr.silenthill99.sonicmod.init.entities.amy.AmyRenderer;
 import fr.silenthill99.sonicmod.init.entities.sonic.Sonic;
 import fr.silenthill99.sonicmod.init.entities.sonic.SonicRenderer;
+import fr.silenthill99.sonicmod.utils.ModSoundEvents;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -27,6 +28,7 @@ public class Main {
         bus.addListener(this::onEntityAttributeCreation);
         ModItems.ITEMS.register(bus);
         ModEntityTypes.ENTITY_TYPE.register(bus);
+        ModSoundEvents.SOUND_EVENT.register(bus);
     }
 
     private void setup(FMLCommonSetupEvent event)

@@ -4,5 +4,7 @@
   "item.sonic_mod.amy_rose_spawn_egg": "Oeuf d'apparition d'Amy Rose",
   "item.sonic_mod.piko_piko_hammer": "Marteau piko piko",
   "item.sonic_mod.sonic_the_hedgehog_spawn_egg": "Oeuf d'apparition de sonic le hérisson",
+  "item.sonic_mod.sonic_theme": "§bThème principal de Sonic",
+  "item.sonic_mod.sonic_theme.desc": "Thème principal de Sonic",
   "itemGroup.sonic": "Sonic"
 }

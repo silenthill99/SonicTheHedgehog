@@ -4,5 +4,7 @@
   "item.sonic_mod.amy_rose_spawn_egg": "Amy Rose spawn egg",
   "item.sonic_mod.piko_piko_hammer": "Piko piko hammer",
   "item.sonic_mod.sonic_the_hedgehog_spawn_egg": "Sonic the hedgehog spawn egg",
+  "item.sonic_mod.sonic_theme": "§bSonic main theme",
+  "item.sonic_mod.sonic_theme.desc": "Sonic main theme",
   "itemGroup.sonic": "Sonic"
 }
