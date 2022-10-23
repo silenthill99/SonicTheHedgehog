@@ -1,12 +1,14 @@
 {
   "entity.sonic_mod.amy_rose": "Amy Rose",
-  "item.sonic_mod.amy_rose_spawn_egg": "Amy Rose spawn egg",
+  "entity.sonic_mod.miles_tails_prower": "Miles \"Tails\" Prower",
   "entity.sonic_mod.knuckles": "Knuckles",
-  "item.sonic_mod.knuckles_spawn_egg": "Knuckles spawn egg",
   "entity.sonic_mod.sonic_the_hedgehog": "Sonic the hedgehog",
+  "item.sonic_mod.amy_rose_spawn_egg": "Amy Rose spawn egg",
+  "item.sonic_mod.knuckles_spawn_egg": "Knuckles spawn egg",
   "item.sonic_mod.piko_piko_hammer": "Piko piko hammer",
   "item.sonic_mod.sonic_the_hedgehog_spawn_egg": "Sonic the hedgehog spawn egg",
   "item.sonic_mod.sonic_theme": "§bSonic main theme",
   "item.sonic_mod.sonic_theme.desc": "Sonic main theme",
+  "item.sonic_mod.tails_spawn_egg": "Tails spawn egg",
   "itemGroup.sonic": "Sonic"
 }

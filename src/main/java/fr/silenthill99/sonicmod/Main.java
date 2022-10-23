@@ -8,6 +8,8 @@ import fr.silenthill99.sonicmod.init.entities.knuckles.Knuckles;
 import fr.silenthill99.sonicmod.init.entities.knuckles.KnucklesRenderer;
 import fr.silenthill99.sonicmod.init.entities.sonic.Sonic;
 import fr.silenthill99.sonicmod.init.entities.sonic.SonicRenderer;
+import fr.silenthill99.sonicmod.init.entities.tails.Tails;
+import fr.silenthill99.sonicmod.init.entities.tails.TailsRenderer;
 import fr.silenthill99.sonicmod.utils.ModSoundEvents;
 import net.minecraftforge.event.entity.EntityAttributeCreationEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -38,6 +40,7 @@ public class Main {
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.SONIC.get(), SonicRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.AMY.get(), AmyRenderer::new);
         RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.KNUCKLES.get(), KnucklesRenderer::new);
+        RenderingRegistry.registerEntityRenderingHandler(ModEntityTypes.TAILS.get(), TailsRenderer::new);
     }
 
     private void clientSetup(FMLClientSetupEvent event)
@@ -50,5 +53,6 @@ public class Main {
         event.put(ModEntityTypes.SONIC.get(), Sonic.createAttributes().build());
         event.put(ModEntityTypes.AMY.get(), Amy.createAttributes().build());
         event.put(ModEntityTypes.KNUCKLES.get(), Knuckles.createAttributes().build());
+        event.put(ModEntityTypes.TAILS.get(), Tails.createMobAttributes().build());
     }
 }
